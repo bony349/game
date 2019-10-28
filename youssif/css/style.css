@@ -1,0 +1,150 @@
+body{
+    background: #444444;
+    height: 2000px;
+    
+}
+#loginBtn{
+    transition:  0.3s;
+    padding: 0px;
+    
+    border: 2px solid greenyellow;
+    border-radius: 50px;
+    text-align: center;
+    padding: 3px 30px 5px 30px
+    
+
+  
+}
+#loginBtn:hover{
+    background: #4BFF3C;
+    color: #444444
+}
+.carousel-inner img{
+    width: 100%;
+    
+}
+
+.carousel-inner{
+width: 100%;
+
+
+}
+.card{
+    height: 150px;
+    margin-top: 20px;
+    
+}
+.card i {
+    font-size: 23px 
+}
+.card span {
+    font-size: 23px;
+    font-weight: 500;
+    
+}
+#consoles{
+    padding: 20px;
+}
+#goToContiner{
+    background:linear-gradient(to right, #12c2e9, #c471ed, #f64f59); 
+    height: 600px; 
+    position: relative;
+}
+#goTo{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%
+}
+#picker{
+    background: #242424
+}
+
+#picker button{
+    color: greenyellow;
+    width: 100%;
+    margin: 3px 0px
+    /*margin: 2px 20px*/
+    
+}
+footer  a{
+color: greenyellow
+}
+footer p {
+    color: #E0E0E0;
+}
+.any{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    padding-top: 3px;
+    transition: 0.5s
+}
+.any:hover{
+    background: greenyellow
+}
+/*
+#loginBtn::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#12E800;
+    opacity: 0.3;
+    filter: blur(2px)
+
+}
+*/
+/*
+#loginBtn:hover{
+    transform: scale(1.1);
+    border-bottom: white solid 1.5px 
+}
+*/
+nav{
+    background-color: rgb(0,0,0,0.1); /* Fallback color */ 
+    position: relative;
+    height: 100px;
+    margin-bottom: 10px; 
+     
+    transition: 0.5s
+    
+}
+nav ul{
+    
+    height: 50px;
+    width: 100%;
+    margin-top: 10px
+   
+}
+nav::after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: -5px;
+  left: 1%;
+  width: 0px;
+  transition:   0.9s;
+  background: white
+  
+}
+nav:hover::after{
+    width: 98%
+    
+}
+nav:hover{
+    background-color: rgb(0,0,0,0.6); 
+}
+nav::before{
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 1px;
+    bottom: -5px;
+    left: 1%;
+    background:#A841A5;
+
+    
+}
