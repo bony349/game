@@ -1,5 +1,41 @@
-Body{background-color:#232527 }
+#backHomeButton{
+  z-index: 1;
+  position: fixed;
+  top :20px;
+  left: 20px;
+  padding: 0px;
+  border-radius: 30px;
+
+}
+#backHomeButton i{
+  font-size: 60px;
+}
+
 #fimg{border: none;}
+.hcrad{
+  position: relative;
+  width: 100%;
+}
+.middleCrad .card{
+  margin: 30px 0px;
+
+}
+.middleCrad{
+  padding: 20px;
+}
+
+.card-img-overlay{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  width: 700px;
+  
+}
+#fhead{font-weight: bold;color: #F09202;font-size: 70px; }
+
 @media only screen and (min-width: 961px) {
   #fp {
    text-align: center;
@@ -11,19 +47,7 @@ Body{background-color:#232527 }
     
   }
 }
-#fhead{font-weight: bold;color: #F09202 }
-@media only screen and (min-width: 961px) {
-  #fhead {
-   text-align: center;margin-top: 300px; font-size: 50px;
-      
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  #fhead {
-   text-align: center;margin-top: 300px; font-size: 50px;
-    
-  }
-}
+
 @media only screen and (min-width: 961px) {
   #fimg {
    height: 700px;
@@ -80,62 +104,33 @@ Body{background-color:#232527 }
     
   }
 }
+@media(max-width:730px){
+  #fhead{
+    font-size: 50px;
+  }
+  #fp{
+    font-size: 17px;
+  }
+}
+@media(max-width:514px){
+  #fhead{
+    font-size: 23px;
+  }
+  #fp{
+    font-size: 7px;
+  }
+ #fimg{
+   
+   height: 180px;
+ }
+ .card-img-overlay{
 
-@media only screen and (min-width: 961px) {
-  #card1  {
-   display: inline-flex;
-   margin-right:200px;
-   margin-left: 37px;      
-  }
-}
-@media only screen and (min-width: 961px) {
-  #card2  {
-   display: inline-flex;
-   margin-right:200px;  
-  }
-}
-@media only screen and (min-width: 961px) {
-  #card3 {
-   display: inline-flex;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #card1{
-    margin-left: 45px;
-    margin-bottom: 10px;  
-  }
-}
-@media only screen and (max-width: 400px) {
-  #card2 {
-    margin-left: 45px;
-    margin-bottom: 10px;  
-  }
-}
-@media only screen and (max-width: 400px) {
-  #card3 {
-    margin-left: 45px;
-  }
+   height: 70px;
+ }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  #card1{
-    margin-left: 200px;
-    margin-bottom: 10px;  
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  #card2 {
-    margin-left: 200px;
-    margin-bottom: 10px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  #card3 {
-    margin-left: 200px;
-    
-  }
-}
+
+
 
 #sticky-footer {
   flex-shrink: none;
