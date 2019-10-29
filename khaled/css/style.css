@@ -1,12 +1,27 @@
 Body{background-color:#232527 }
+#fimg{border: none;}
 @media only screen and (min-width: 961px) {
   #fp {
    text-align: center;
   }
 }
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #fp{
+   text-align: center;
+    
+  }
+}
+#fhead{font-weight: bold;color: #F09202 }
 @media only screen and (min-width: 961px) {
   #fhead {
-   text-align: center;margin-top: 400px; font-size: 50px;font-family: monospace;
+   text-align: center;margin-top: 300px; font-size: 50px;
+      
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #fhead {
+   text-align: center;margin-top: 300px; font-size: 50px;
+    
   }
 }
 @media only screen and (min-width: 961px) {
@@ -23,24 +38,46 @@ Body{background-color:#232527 }
 
 #Scard {
    background-color:#232527;
-    box-shadow: 5px 5px 10px rgb(189, 188, 188,0.7),-5px -5px 10px rgb(189, 188, 188,0.7);
 }
 #Sh5{color: white}
 #Sp{color: white}
+#Ssmall{margin-left: 50px;}
 @media only screen and (min-width: 961px) {
   #Sh5 {
-   text-align: center;
+   text-align: center; margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #Sh5 {
+    text-align: center;
+    
   }
 }
 @media only screen and (min-width: 961px) {
   #Sp {
-   text-align: center;
+   text-align: center;margin-left: 50px ;
   }
 }
-
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #Sp {
+    text-align: center;
+    
+  }
+}
 @media only screen and (min-width: 961px) {
   #Simg {
-   height: 500px;
+   height: 400px; width: 500px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #Simg {
+    width: 357px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  #Simg {
+    width: 280px;height: 260px;
+    
   }
 }
 
