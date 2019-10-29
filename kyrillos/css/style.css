@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+.full{
+    width: 100%;
+    height: auto;
+}
+.headers{
+    color: red;
+    font-family: "Impact", Charcoal, sans-serif;
+    padding-left: 1%;
+}
+.text{
+    color:aliceblue;
+    padding-left: 1%;
+    font-size: 35px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding-bottom: 20px; 
+}
+.dis{
+    display: inline-block;
+}
+.boxText{
+    margin-top: 3%
+}
