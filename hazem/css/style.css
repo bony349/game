@@ -1,6 +1,5 @@
-#form1{
-    margin: 50px auto;
-    padding: 20px   
+nav{
+    margin-bottom: 100px ;
 }
 #requestbutton {
     background-color: #4CAF50;
@@ -14,5 +13,10 @@
     margin: auto;
   }
   i{
-      color: white;
+      color: rgb(0, 255, 85);
+      margin: 9px ;
   }
+span{
+    color:white;
+    margin: 9px;
+}

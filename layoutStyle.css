@@ -1,5 +1,10 @@
 body{
     background: #444444;
+    
+     
+}
+body,html{
+    overflow-x: hidden ;
 }
 
 nav{
@@ -11,6 +16,7 @@ nav{
     transition: 0.5s
     
 }
+
 nav ul{
     
     height: 50px;
@@ -81,3 +87,15 @@ footer  a{
     .any:hover{
         background: greenyellow
     }
+    ::-webkit-scrollbar{
+        width: 12px;
+     }
+     ::-webkit-scrollbar-thumb{
+       background: linear-gradient(to top, #11998e, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       border-radius: 12px ;
+     }
+     @media(max-width:800px){
+        ::-webkit-scrollbar{
+            width: 7px;
+         }
+     }
