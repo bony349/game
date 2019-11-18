@@ -10,7 +10,7 @@ body,html{
 nav{
     background-color: rgb(0,0,0,0.1); /* Fallback color */ 
     position: relative;
-    height: 100px;
+    
     margin-bottom: 10px; 
      
     transition: 0.5s
@@ -19,10 +19,9 @@ nav{
 
 nav ul{
     
-    height: 50px;
     width: 100%;
-    margin-top: 10px
-   
+    margin-top: 10px;
+
 }
 nav::after{
   position: absolute;
