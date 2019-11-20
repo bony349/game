@@ -184,10 +184,19 @@ margin-right:10px ;
  height: 850px;
  padding: 170px 10% 0px 10%;
  position: relative;
- 
+
+}
+#look1{
+    background: url(https://fsb.zobj.net/crop.php?r=IvIMD4O-ots5tMSohqaj3xflhWzq5bygbseWd5BoKd3w-vHxQxkH3nPPM3HE5g0uZ-kSHBpVIZ6WgPy6hO_YBbyIHH4OdqoRvVY7s4LS9G8gRapG01SDILFP0Q6srqnIrypV09NtnYyupB0OTOz2cr7QhrchcBDgR15WggXzeMDMtHVU10OKeSWQWWc) no-repeat center center  ;
+    background-size: 100% 100% ;
+}
+#look2{
+     
  background: url(https://vignette.wikia.nocookie.net/callofduty/images/7/76/Game_cover_art_BOIII.jpg/revision/latest?cb=20160211194000) no-repeat center center  ;
  background-size: 100% 100% ;
+
 }
+
 #look .col-md-4{
     margin: 0px;
     padding: 0px;
