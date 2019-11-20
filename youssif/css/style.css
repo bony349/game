@@ -146,9 +146,9 @@ margin-right:10px ;
   */
 
 /*    mood 2 */
-.carousel-indicators li {
+#demo .carousel-indicators li {
   width: 70px;
-  height:5px;
+  height:3px;
   border-radius:50px;
   background-image: linear-gradient(140deg, #11998e, #38ef7d);   
   margin-left: 10px;
@@ -181,18 +181,32 @@ margin-right:10px ;
 .contant{
  
  width: 100%;
- height: 600px;
- padding: 150px 0px 0px 3%;
+ height: 850px;
+ padding: 170px 10% 0px 10%;
  position: relative;
  
- background: url(https://vignette.wikia.nocookie.net/callofduty/images/7/76/Game_cover_art_BOIII.jpg/revision/latest?cb=20160211194000) no-repeat center center ;
+ background: url(https://vignette.wikia.nocookie.net/callofduty/images/7/76/Game_cover_art_BOIII.jpg/revision/latest?cb=20160211194000) no-repeat center center  ;
+ background-size: 100% 100% ;
+}
+#look .col-md-4{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contant * {
+    float: left;
+    clear: both;
 }
 .contant > p{
     width: 90%;
+    font-size: 20px;
 }
 .contant hr{
-    width: 300px;
-    float: left;
+    width: 80%; 
+}
+.contant h3{
+    font-size: 35px;
+    color: whitesmoke;
 }
 .sub-contant .btn-success{
     width: 60%;
@@ -201,27 +215,27 @@ margin-right:10px ;
 }
 .contant p{
     color: white;
+    font-size: 25px;
 }
 .sub-contant{
     background: rgb(0,0,0,0.7);
     visibility: hidden;
     position: absolute;
-    
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    padding: 150px 0px 0px 3%;
+    padding: 170px 10% 0px 10%;
     transition: 0.7s;
 }
 .contant:hover .sub-contant{
     visibility: visible;
-    padding: 100px 0px 0px 3%; 
+    padding: 100px 10% 0px 10%;
     
 }
 .sub-contant p {
     width: 90%;
-    margin-top: 35px;
+    margin-top: 70px;
     visibility: hidden;
     transition: 0.6s;
 }
@@ -231,18 +245,59 @@ margin-right:10px ;
 
 }
 #demo2{
-    height: 600px;
+    height: 850px;
 }
+
 #demo2 img{
     height: 100%;
     width: 100%;
 
 }
+#demo2 .carousel-item{
+    height: 100%;
+}
+#demo2 ul{
+    padding: 0px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+#demo2 .carousel-indicators li {
+    width: 20px;
+    height:7px;
+    float: left;
+    border-radius:50px;
+    background:black;
+    margin-left: 10px;
+    margin-right:10px ;
+    border:2px solid white;
+}
+#demo2 .carousel-caption{
+    position: absolute;
+    top: 70%; left:10%;
+    width: 250px;
+    font-size: 22px;
+    transform: translate(-10%,-50%);
+    
+}
+
+#demo2 .carousel-caption *{
+    
+    float: left;
+}
+#demo2 .carousel-caption p{
+    text-align: left;
+    
+}
+
+#demo2 .carousel-caption button{
+    width: 200px;
+    border-radius: 15px;
+}
+
 
 @media(max-width : 1516px){
     #news-feed{
-        margin-top: 0;
-        
+        margin-top: 0; 
     }
 }
 @media(max-width : 766px){
