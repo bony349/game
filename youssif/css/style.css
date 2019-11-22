@@ -85,12 +85,12 @@ width: 100%;
     position: relative;
 }
 .navbar-brand{
-    margin-top: 62px;
+    margin-top: 0px;
   
     
 }
 .navbar-brand img{
-    width: 280px;
+    width: 80px;
   
 }
 #demo h1{
@@ -241,6 +241,9 @@ margin-right:10px ;
     visibility: visible;
     padding: 100px 10% 0px 10%;
     
+}
+.contant:hover .hidecontent{
+	display: none;
 }
 .sub-contant p {
     width: 90%;
