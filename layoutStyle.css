@@ -39,7 +39,8 @@ nav::after{
   left: 1%;
   width: 0px;
   transition:   0.9s;
-  background: white
+  background: white;
+  /*background: linear-gradient(to right ,#8a2387, #e94057, #f27121)*/
   
 }
 nav:hover::after{
