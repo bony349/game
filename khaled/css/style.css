@@ -74,11 +74,7 @@ body{
 }
 /*         HEADER               */
 
-.container
-{
-    
-    display: inline-block;
-}
+
 #fhead{
     margin: 0;
     padding: 0;
