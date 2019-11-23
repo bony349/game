@@ -13,6 +13,7 @@
 #description {
     margin-top: 50px;
     background: linear-gradient(to right bottom, #f0c27b, #4b1248);
+    /*linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);*/
     padding-top: 30px;
     padding-bottom: 30px;
     transition: 0.4s;
@@ -84,15 +85,7 @@ width: 100%;
 #demo{
     position: relative;
 }
-.navbar-brand{
-    margin-top: 0px;
-  
-    
-}
-.navbar-brand img{
-    width: 80px;
-  
-}
+
 #demo h1{
     background: linear-gradient(140deg, #ff2600 40%, #2f00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: Arial, Helvetica, sans-serif;
@@ -179,12 +172,10 @@ margin-right:10px ;
 }
 */
 .contant{
- 
  width: 100%;
  height: 850px;
  padding: 170px 10% 0px 10%;
  position: relative;
-
 }
 #look1{
     background: url(https://fsb.zobj.net/crop.php?r=IvIMD4O-ots5tMSohqaj3xflhWzq5bygbseWd5BoKd3w-vHxQxkH3nPPM3HE5g0uZ-kSHBpVIZ6WgPy6hO_YBbyIHH4OdqoRvVY7s4LS9G8gRapG01SDILFP0Q6srqnIrypV09NtnYyupB0OTOz2cr7QhrchcBDgR15WggXzeMDMtHVU10OKeSWQWWc) no-repeat center center  ;
