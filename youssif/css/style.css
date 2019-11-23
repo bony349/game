@@ -1,45 +1,39 @@
-body{
-    background: #444444;
 
-    
-}
-#loginBtn{
-    transition:  0.3s;
-    padding: 0px;
-    
-    border: 2px solid greenyellow;
-    border-radius: 50px;
-    text-align: center;
-    padding: 3px 30px 5px 30px
-    
 
-  
-}
-#loginBtn:hover{
-    background: #4BFF3C;
-    color: #444444
-}
 .carousel-inner img{
     width: 100%;
-    
+    height: 100%;
+}
+.carousel-inner{
+    width: 100%;
+    height: 100%;
 }
 
-.carousel-inner{
+
+#description {
+    margin-top: 50px;
+    background: linear-gradient(to right bottom, #f0c27b, #4b1248);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.4s;
+}
+
+.carousel-inner {
 width: 100%;
-
-
 }
 .card{
-    height: 150px;
+    height: 180px;
     margin-top: 20px;
     
 }
 .card i {
-    font-size: 23px 
+    font-size: 23px;
+    margin-top:30px;
 }
 .card span {
     font-size: 23px;
     font-weight: 500;
+    margin-top: 18px;
     
 }
 #consoles{
@@ -61,28 +55,109 @@ width: 100%;
 }
 
 #picker button{
-    color: greenyellow;
+    color: whitesmoke;
+    /*background-image: linear-gradient(140deg,#FCAB13 -1% ,#A951EB 100% );*/
+    background: none;
+    position: relative;
+    transform-style: preserve-3d;
     width: 100%;
-    margin: 3px 0px
+    margin: 5px 0px;
+    overflow: hidden;
     /*margin: 2px 20px*/
     
 }
-footer  a{
-color: greenyellow
+#picker button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:170%;
+    height:100%;
+    background:linear-gradient(140deg,#FCAB13 50% ,#A951EB 100% );;
+    z-index: -1; /* eh da ?*/
+    transition:  0.4s;
+  
+  }
+#picker button:hover::before{
+    transform: translateX(80px) ;
+  }
+#demo{
+    position: relative;
 }
-footer p {
-    color: #E0E0E0;
+.navbar-brand{
+    margin-top: 0px;
+  
+    
 }
-.any{
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    padding-top: 3px;
-    transition: 0.5s
+.navbar-brand img{
+    width: 80px;
+  
 }
-.any:hover{
-    background: greenyellow
+#demo h1{
+    background: linear-gradient(140deg, #ff2600 40%, #2f00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Arial, Helvetica, sans-serif;
+
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
+.hot-news{
+    width: 250px;
+    margin: 10px ;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+.hot-news img{
+    width: 100%;
+    height: 160px;
+    transition: 0.8s;
+}
+.hot-news:hover img{
+    transform: scale(1.2);
+}
+#news-feed{
+    z-index: 2;
+    margin-top: 150px ;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+    
+}
+/*      mood 1
+.carousel-indicators li {
+    width: 15px;
+  height:15px;
+  border-radius: 100%;
+    background-image: linear-gradient(140deg, #ff00cc 40%, #333399 );
+margin-left: 10px;
+margin-right:10px ;
+    transition: 0.5s;
+    border:none;
+  }
+
+
+  .carousel-indicators li:hover {
+    width: 20px;
+    height: 20px;
+  }
+  */
+
+/*    mood 2 */
+#demo .carousel-indicators li {
+  width: 70px;
+  height:3px;
+  border-radius:50px;
+  background-image: linear-gradient(140deg, #11998e, #38ef7d);   
+  margin-left: 10px;
+  margin-right:10px ;
+  transition: 0.5s;
+  border:none;
+  }
+
+
 /*
 #loginBtn::before{
     content:'';
@@ -103,48 +178,195 @@ footer p {
     border-bottom: white solid 1.5px 
 }
 */
-nav{
-    background-color: rgb(0,0,0,0.1); /* Fallback color */ 
-    position: relative;
-    height: 100px;
-    margin-bottom: 10px; 
-     
-    transition: 0.5s
-    
-}
-nav ul{
-    
-    height: 50px;
-    width: 100%;
-    margin-top: 10px
-   
-}
-nav::after{
-  position: absolute;
-  content: "";
-  height: 1px;
-  bottom: -5px;
-  left: 1%;
-  width: 0px;
-  transition:   0.9s;
-  background: white
-  
-}
-nav:hover::after{
-    width: 98%
-    
-}
-nav:hover{
-    background-color: rgb(0,0,0,0.6); 
-}
-nav::before{
-    position: absolute;
-    content: "";
-    width: 98%;
-    height: 1px;
-    bottom: -5px;
-    left: 1%;
-    background:#A841A5;
+.contant{
+ 
+ width: 100%;
+ height: 850px;
+ padding: 170px 10% 0px 10%;
+ position: relative;
 
+}
+#look1{
+    background: url(https://fsb.zobj.net/crop.php?r=IvIMD4O-ots5tMSohqaj3xflhWzq5bygbseWd5BoKd3w-vHxQxkH3nPPM3HE5g0uZ-kSHBpVIZ6WgPy6hO_YBbyIHH4OdqoRvVY7s4LS9G8gRapG01SDILFP0Q6srqnIrypV09NtnYyupB0OTOz2cr7QhrchcBDgR15WggXzeMDMtHVU10OKeSWQWWc) no-repeat center center  ;
+    background-size: 100% 100% ;
+}
+#look2{
+     
+ background: url(https://vignette.wikia.nocookie.net/callofduty/images/7/76/Game_cover_art_BOIII.jpg/revision/latest?cb=20160211194000) no-repeat center center  ;
+ background-size: 100% 100% ;
+
+}
+
+#look .col-md-4{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contant * {
+    float: left;
+    clear: both;
+}
+.contant > p{
+    width: 90%;
+    font-size: 20px;
+}
+.contant hr{
+    width: 80%; 
+}
+.contant h3{
+    font-size: 35px;
+    color: whitesmoke;
+}
+.sub-contant .btn-success{
+    width: 60%;
+    display: block;
+    border-radius: 15px;
+}
+.contant p{
+    color: white;
+    font-size: 25px;
+}
+.sub-contant{
+    background: rgb(0,0,0,0.7);
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 170px 10% 0px 10%;
+    transition: 0.7s;
+}
+.contant:hover .sub-contant{
+    visibility: visible;
+    padding: 100px 10% 0px 10%;
     
 }
+.contant:hover .hidecontent{
+	display: none;
+}
+.sub-contant p {
+    width: 90%;
+    margin-top: 70px;
+    visibility: hidden;
+    transition: 0.6s;
+}
+.sub-contant:hover p {
+    visibility: visible;
+    margin-top: 7px;
+
+}
+#demo2{
+    height: 850px;
+}
+
+#demo2 img{
+    height: 100%;
+    width: 100%;
+
+}
+#demo2 .carousel-item{
+    height: 100%;
+}
+#demo2 ul{
+    padding: 0px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+#demo2 .carousel-indicators li {
+    width: 20px;
+    height:7px;
+    float: left;
+    border-radius:50px;
+    background:black;
+    margin-left: 10px;
+    margin-right:10px ;
+    border:2px solid white;
+}
+#demo2 .carousel-caption{
+    position: absolute;
+    top: 70%; left:10%;
+    width: 250px;
+    font-size: 22px;
+    transform: translate(-10%,-50%);
+    
+}
+
+#demo2 .carousel-caption *{
+    
+    float: left;
+}
+#demo2 .carousel-caption p{
+    text-align: left;
+    
+}
+
+#demo2 .carousel-caption button{
+    width: 200px;
+    border-radius: 15px;
+}
+
+
+@media(max-width : 1516px){
+    #news-feed{
+        margin-top: 0; 
+    }
+}
+@media(max-width : 766px){
+    #news-feed{
+        margin-top: 4%;
+        
+    }
+    #description{
+        padding-bottom: 0px;
+        background: linear-gradient(to left top, #ff4e50, #f9d423);
+    }
+    .text-description{
+        margin-left: 6px ;
+    }
+}
+@media(max-width : 973px){
+    .hot-news{
+        width: 27%;
+        margin: 5px ;
+    }
+    .hot-news img{
+        height: 100%;
+    }
+}
+@media(max-width : 450px){
+    .hot-news{
+     
+     width: 90px;
+    }
+    .carousel-indicators li {
+        width: 40px;
+        height:2px;
+    }
+}
+
+
+@media(max-width : 375px){
+    .hot-news{
+        width: 82px;
+        margin: 5px ;
+    }
+    .hot-news img{
+        height: 50px;
+    }
+}
+
+@media(max-width : 964px){
+ .carousel h1, hr{
+     display: none;
+
+ }
+}
+
+
+
+
+ 
+ 
+
+
