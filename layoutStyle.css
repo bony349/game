@@ -16,7 +16,15 @@ nav{
     transition: 0.5s
     
 }
-
+.navbar-brand{
+    margin-top: 0px;
+  
+    
+}
+.navbar-brand img{
+    width: 80px;
+  
+}
 nav ul{
     
     width: 100%;
