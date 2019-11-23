@@ -16,7 +16,7 @@ form.addEventListener('submit',(e) => {
     }
     if(password.value.length < 5)
     {
-        messages.push("Must be 6 characters minimum")
+        messages.push("The Password Must be 6 characters minimum")
     }
     if(password.value !== ConfirmPassword.value)
     {
