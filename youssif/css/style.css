@@ -173,8 +173,7 @@ margin-right:10px ;
 */
 .contant{
  width: 100%;
- height: 850px;
- padding: 170px 10% 0px 10%;
+ height: 700px;
  position: relative;
 }
 #look1{
@@ -209,14 +208,33 @@ margin-right:10px ;
     color: whitesmoke;
 }
 .sub-contant .btn-success{
-    width: 60%;
+    width: 200px;
+    padding: 4px;
+    margin-bottom: 2px;
     display: block;
     border-radius: 15px;
 }
 .contant p{
     color: white;
-    font-size: 25px;
+    font-size: 18px;
+    width: 90%;
 }
+
+.hide-on-hover{
+    position: absolute;
+    top: 80%; left:10px;
+    transform: translate(0%,-50%); 
+    width: 90%;
+}
+
+.show-on-hover{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 90%;
+    transition: .7s;
+}
+
 .sub-contant{
     background: rgb(0,0,0,0.7);
     visibility: hidden;
@@ -225,36 +243,38 @@ margin-right:10px ;
     height: 100%;
     top: 0;
     left: 0;
-    padding: 170px 10% 0px 10%;
-    transition: 0.7s;
 }
+
 .contant:hover .sub-contant{
-    visibility: visible;
-    padding: 100px 10% 0px 10%;
-    
+    visibility: visible;   
 }
+
+.contant:hover .show-on-hover{
+    bottom: 200px;
+}
+
 .contant:hover .hidecontent{
 	display: none;
 }
+
 .sub-contant p {
     width: 90%;
-    margin-top: 70px;
+    margin-top: 50px;
     visibility: hidden;
-    transition: 0.6s;
+    transition: 0.4s;
 }
+
 .sub-contant:hover p {
     visibility: visible;
     margin-top: 7px;
-
 }
 #demo2{
-    height: 850px;
+    height: 700px;
 }
 
 #demo2 img{
     height: 100%;
     width: 100%;
-
 }
 #demo2 .carousel-item{
     height: 100%;
@@ -279,25 +299,18 @@ margin-right:10px ;
     top: 70%; left:10%;
     width: 250px;
     font-size: 22px;
-    transform: translate(-10%,-50%);
-    
+    transform: translate(-10%,-50%);   
 }
-
 #demo2 .carousel-caption *{
-    
     float: left;
 }
 #demo2 .carousel-caption p{
     text-align: left;
-    
 }
-
 #demo2 .carousel-caption button{
-    width: 200px;
+    width: 120px;
     border-radius: 15px;
 }
-
-
 @media(max-width : 1516px){
     #news-feed{
         margin-top: 0; 
@@ -306,7 +319,6 @@ margin-right:10px ;
 @media(max-width : 766px){
     #news-feed{
         margin-top: 4%;
-        
     }
     #description{
         padding-bottom: 0px;
@@ -319,7 +331,7 @@ margin-right:10px ;
 @media(max-width : 973px){
     .hot-news{
         width: 27%;
-        margin: 5px ;
+        margin: 5px;
     }
     .hot-news img{
         height: 100%;
@@ -327,7 +339,6 @@ margin-right:10px ;
 }
 @media(max-width : 450px){
     .hot-news{
-     
      width: 90px;
     }
     .carousel-indicators li {
@@ -348,10 +359,78 @@ margin-right:10px ;
 }
 
 @media(max-width : 964px){
- .carousel h1, hr{
+ #demo h1, hr{
      display: none;
-
  }
+
+}
+@media(max-width:970px){
+    .contant p{
+        font-size: 13px;
+    }
+    .contant h3{
+        font-size: 25px;
+    }
+    #demo2 p{
+        font-size: 17px;
+    }
+    #look{
+        height: 500px;
+    }
+    .contant, #demo2{
+        height: 500px;
+    }
+    #demo2 button{
+        height: 30px;
+        padding: 0px;
+        width: 500px;
+    }
+    #demo2 .carousel-caption{
+        top: 67%;
+    }
+    .sub-contant .btn-success{
+        margin-bottom: 10px;
+    }
+    .contant,#demo2{
+        clear: both;
+        display: block;
+    }
+}
+@media(max-width:767px){
+    .contant p{
+        font-size: 20px;
+    }
+   
+    #demo2 p{
+        font-size: 21px;
+    }
+    #look{
+        height: fit-content;
+    }
+    .contant, #demo2{
+        height: 550px;
+    }
+
+    #demo2 .carousel-caption{
+        top: 67%;
+    }
+    .sub-contant .btn-success{
+        margin-bottom: 10px;
+    }
+    .contant,#demo2{
+        width: 400px;
+        margin: 10px auto;
+    }
+}
+@media(max-width: 402px){
+    .contant,#demo2{
+        width: 100% ;
+        margin: 10px auto;
+    }
+    .contant p {
+        font-size: 17px;
+    }
+    
 }
 
 
