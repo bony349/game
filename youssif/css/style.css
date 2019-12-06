@@ -173,7 +173,7 @@ margin-right:10px ;
 */
 .contant{
  width: 100%;
- height: 700px;
+ height: 850px;
  position: relative;
 }
 #look1{
@@ -208,8 +208,8 @@ margin-right:10px ;
     color: whitesmoke;
 }
 .sub-contant .btn-success{
-    width: 200px;
-    padding: 4px;
+    width: 300px;
+    padding: 6px;
     margin-bottom: 2px;
     display: block;
     border-radius: 15px;
@@ -269,7 +269,7 @@ margin-right:10px ;
     margin-top: 7px;
 }
 #demo2{
-    height: 700px;
+    height: 850px;
 }
 
 #demo2 img{
@@ -308,12 +308,58 @@ margin-right:10px ;
     text-align: left;
 }
 #demo2 .carousel-caption button{
-    width: 120px;
+    width: 150px;
     border-radius: 15px;
 }
+.on-hover-move{
+    background: url(https://cdna.artstation.com/p/assets/covers/images/001/207/058/medium/suke-5.jpg?1442211338) no-repeat center center ;
+    background-size:100% 100%;
+    position: relative;
+    height: 500px;
+}
+.on-hover-move:first-child{
+    background: url(https://www.slashgear.com/wp-content/uploads/2019/08/Destiny-2-slashgear-1267x720.jpg) no-repeat center center ;
+
+    
+}
+
+.on-hover-move:last-child img{
+    width: 400px;
+    bottom:-50px;
+    left: -100px;
+}
+
+.on-hover-move img{
+    position: absolute;
+    transition: 0.7s ease-in-out;
+    
+}
+.on-hover-move:first-child img{
+    bottom: 0;
+    right: -100px ;
+}
+.on-hover-move:first-child:hover img{
+    right: -150px;
+    transform: rotate(2deg);
+}
+.on-hover-move:last-child:hover img{
+    left: -200px;
+    transform: rotate(-5deg);
+  
+}
+
 @media(max-width : 1516px){
     #news-feed{
         margin-top: 0; 
+    }
+    .contant{
+        height: 700px;
+       }
+       #demo2{
+        height: 700px;
+    }
+    .sub-contant .btn-success{
+        width: 200px;
     }
 }
 @media(max-width : 766px){
@@ -362,6 +408,12 @@ margin-right:10px ;
  #demo h1, hr{
      display: none;
  }
+
+ .sub-contant .btn-success{
+    width: 180px;
+    padding: 3px;
+   
+}
 
 }
 @media(max-width:970px){
