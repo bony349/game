@@ -1,33 +1,33 @@
 const express = require('express')
 const path = require('path')
+const index = require('./routes/index');
+const about = require('./routes/about');
+const contactus = require('./routes/ContactUs');
+const Features = require('./routes/Features');
+const signup = require('./routes/signup');
+const products = require('./routes/products');
+const error404 = require('./routes/404error');
+
+
+
+
 const app = express()
-app.use(express.static(path.join(__dirname, 'assets')))
+
 app.use(express.static(path.join(__dirname)))
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
-app.get('/', (req, res, next) => {
-    res.render('index')
-})
-app.get('/about', (req, res, next) => {
-    res.render('about')
-})
-app.get('/ContactUs', (req, res, next) => {
-    res.render('ContactUs')
-})
-app.get('/Features', (req, res, next) => {
-    res.render('Features')
-})
-app.get('/products', (req, res, next) => {
-    res.render('products')
-})
-app.get('/signup', (req, res, next) => {
-    res.render('signup')
-})
+app.use(index);
+app.use(about);
+app.use(products);
+app.use(signup);
+app.use(Features);
+app.use(contactus);
+app.use(error404)
+
+
+
 app.listen(3000, (err) => {
     console.log(err)
     console.log('server listen on port 3000')
 })
-app.use(function(req, res, next) {
-    return res.status(404).render('404error');
-});
