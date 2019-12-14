@@ -1,7 +1,12 @@
+
 const express = require('express');
 const path = require('path');
 const app = express();
 /*
+=======
+const express = require('express')
+const path = require('path')
+>>>>>>> 727136823716186ca56966b20e961fff611717b6
 const index = require('./routes/index');
 const about = require('./routes/about');
 const contactus = require('./routes/ContactUs');
@@ -9,13 +14,22 @@ const Features = require('./routes/Features');
 const signup = require('./routes/signup');
 const products = require('./routes/products');
 const error404 = require('./routes/404error');
+<<<<<<< HEAD
 const games = require('./routes/games')
 */
 const bodyparser =  require('body-parser');
 var urlEncode = bodyparser.urlencoded({extended: false});
 app.use(express.static(path.join(__dirname, 'assets')))
+
+
+
+
+
+
+
+//727136823716186ca56966b20e961fff611717b6
 app.use(express.static(path.join(__dirname)))
-app.use(bodyparser())
+
 
  gamesLsit = [
      {
@@ -88,14 +102,16 @@ app.use(bodyparser())
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 
+
 /*
+=======
+// 727136823716186ca56966b20e961fff611717b6
 app.use(index);
 app.use(about);
 app.use(products);
 app.use(signup);
 app.use(Features);
 app.use(contactus);
-app.use(error404)
 app.use(games);
 */
 
@@ -157,11 +173,18 @@ app.get("/search",(req,res,next)=>{
     
 })
 
+
+
+// 727136823716186ca56966b20e961fff611717b6
+
 app.listen(3000, (err) => {
     console.log(err)
     console.log('server listen on port 3000')
+
 })
 
 app.use(function(req, res, next) {
     return res.status(404).render('404error');
 });
+
+
