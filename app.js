@@ -11,21 +11,14 @@ const signup = require('./routes/signup');
 const products = require('./routes/products');
 const error404 = require('./routes/404error');
 
-const games = require('./routes/games')
+//const games = require('./routes/games')
 
-const bodyparser = require('body-parser');
-var urlEncode = bodyparser.urlencoded({ extended: false });
+//const bodyparser = require('body-parser');
+//var urlEncode = bodyparser.urlencoded({ extended: false });
 app.use(express.static(path.join(__dirname, 'assets')))
-
-
-
-
-
-
-
 app.use(express.static(path.join(__dirname)))
 
-
+/*
 gamesLsit = [{
         id: 1,
         name: "game1",
@@ -91,8 +84,7 @@ function getGames(str) {
     }
     return games;
 }
-
-
+*/
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 
@@ -104,11 +96,11 @@ app.use(products);
 app.use(signup);
 app.use(Features);
 app.use(contactus);
-app.use(games);
+//app.use(games);
 app.use(error404);
 
 
-
+/*
 app.get("/games", (req, res, next) => {
     res.render('games', { games: gamesLsit })
 })
@@ -149,7 +141,7 @@ app.get("/search", (req, res, next) => {
 
 })
 
-
+*/
 
 app.listen(3000, (err) => {
     console.log(err)
