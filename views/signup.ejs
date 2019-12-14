@@ -14,19 +14,20 @@
     <link rel="stylesheet" href="../assets/css/layoutStyle.css">
     <link rel="stylesheet" href="../assets/css/signupStyle.css">
     <style>
-        .dis{
+        .dis {
             text-align: center;
         }
     </style>
+
 </head>
 
 <body>
     <%- include("parts/header")%>
-        <div class="container-fluid" style="margin-top: 50px;" >
+        <div class="container-fluid" style="margin-top: 50px;">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-7 col-xs-12" id="con">
                     <div id="motion" class="right"></div>
-                    <form action="/action_page.php" id="loginForm">
+                    <form id="loginForm">
                         <div><button id="toSignup" style="border-radius: 20px; padding-left: 6px ;" type="button" class="btn btn-outline-dark"><i class="fas fa-chevron-left"></i> Sign up</button></div>
                         <div class="follow_us" style="margin: 20px 0px 80px 0px ;">
                             <button type="button" class="btn btn-outline-dark">  <i class="fab fa-facebook"></i></button>
@@ -35,11 +36,11 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" name="loginemail">
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd">
+                            <input type="password" class="form-control" id="pwd" name="loginpasword">
                         </div>
                         <div class="form-group form-check">
                             <label class="form-check-label">
@@ -50,7 +51,7 @@
 
                     </form>
 
-                    <form action="addAccount" method="POST" id="signupForm" style="background: white;">
+                    <form action="/signup" method="POST" id="signupForm" style="background: white;">
                         <div style="text-align: right;"><button id="toLogin" style="border-radius: 20px; padding-right: 6px ;" type="button" class="btn btn-outline-dark"> Login <i class="fas fa-chevron-right"></i></button></div>
                         <div class="follow_us" style="margin-top: 20px ;">
                             <button type="button" class="btn btn-outline-dark">  <i class="fab fa-facebook"></i></button>
@@ -59,26 +60,26 @@
                         </div>
                         <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" class="form-control myform" id="name">
-                            <div class="dis" ></div>
+                            <input type="text" class="form-control myform" id="name" name="name">
+                            <div class="dis"></div>
                         </div>
-                        <div class="form-group"  >
+                        <div class="form-group">
                             <label for="email">Email address:</label>
-                            <input type="email" name="email"  class="form-control myform" id="email2">
+                            <input type="email" class="form-control myform" id="email2" name="signupemail">
                             <div class="dis" id="emailDis"></div>
                         </div>
                         <div class="form-group">
                             <label for="password">Password:</label>
-                            <input type="password" name="password" class="form-control myform" id="password">
+                            <input type="password" class="form-control myform" id="password2" name="signuppassword">
                             <div class="dis" id="passDis"></div>
                         </div>
                         <div class="form-group">
                             <label for="confirm">Confirm Password:</label>
-                            <input  type="password" name="confirm" class="form-control myform" id="confirm">
+                            <input type="password" class="form-control myform" id="confirm" name="signupconfirm">
                             <div class="dis" id="confirmDis"></div>
                         </div>
                         <div id="submitBtn" style="text-align: center;"><button type="submit" class="btn btn-primary">Submit</button></div>
-                        
+
                     </form>
                 </div>
 

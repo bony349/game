@@ -1,8 +1,7 @@
 const express = require('express');
 const path = require('path');
+
 const app = express();
-
-
 const index = require('./routes/index');
 const about = require('./routes/about');
 const contactus = require('./routes/ContactUs');
@@ -10,15 +9,26 @@ const Features = require('./routes/Features');
 const signup = require('./routes/signup');
 const products = require('./routes/products');
 const error404 = require('./routes/404error');
+app.use(express.static(path.join(__dirname, 'assets')))
+app.use(express.static(path.join(__dirname)))
+app.set('view engine', 'ejs')
+app.set('views', 'views')
+app.use(index);
+app.use(about);
+app.use(products);
+app.use(signup);
+app.use(Features);
+app.use(contactus);
+app.use(error404);
 
+
+
+
+/*
 //const games = require('./routes/games')
 
 //const bodyparser = require('body-parser');
 //var urlEncode = bodyparser.urlencoded({ extended: false });
-app.use(express.static(path.join(__dirname, 'assets')))
-app.use(express.static(path.join(__dirname)))
-
-/*
 gamesLsit = [{
         id: 1,
         name: "game1",
@@ -84,21 +94,8 @@ function getGames(str) {
     }
     return games;
 }
-*/
-app.set('view engine', 'ejs')
-app.set('views', 'views')
-
-
-
-app.use(index);
-app.use(about);
-app.use(products);
-app.use(signup);
-app.use(Features);
-app.use(contactus);
 //app.use(games);
-app.use(error404);
-
+*/
 
 /*
 app.get("/games", (req, res, next) => {
