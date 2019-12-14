@@ -26,7 +26,7 @@ form div:last-child button{
     border-radius: 20px ;
     padding: 7px;
 }
-form div:last-child{
+#submitBtn{
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -52,11 +52,11 @@ form div:last-child{
     transition: 1.5s;
     border-radius:10px;
 }
-form{
+.container-fluid form{
     background: white;
     padding: 10px;
    
-    height: 550px;
+    height: 620px;
     position: relative;
     border-radius: 12px;
 }

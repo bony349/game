@@ -24,6 +24,7 @@
 
 
     <%- include("parts/header")%>
+    <%- include("parts/chooses")%>
         <div id="demo" class="carousel slide" data-ride="carousel">
 
             <div class="continer" id="news-feed">
@@ -250,7 +251,7 @@
                 <div class="col-12">
                     <div id="goTo">
                         <h1 class="display-4">SEE ALL AVAILABLE GAMES</h1>
-                        <button style="border-radius: 200px;padding: 0px" type="button" class="btn btn-outline-dark btn-lg"><i
+                        <button onclick="window.location.href = '../games'"  style="border-radius: 200px;padding: 0px" type="button" class="btn btn-outline-dark btn-lg"><i
               style="font-size: 200px" class="fas fa-chevron-circle-right"></i>
           </button>
                     </div>

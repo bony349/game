@@ -45,7 +45,8 @@ p ,h2, h4, label{
     border-radius: 15px;
     background: linear-gradient(to right ,#CA0707,#CAAA07,#0FDA09);
 }
-form{
+/*
+form:last-child{
     width: 700px;
     margin: 30px auto;
 }
@@ -75,7 +76,7 @@ input[type=range]::-webkit-slider-runnable-track {
     margin-top: -45px;
     transform: rotate(-45deg) translate(75%,75%) ;
   }
- 
+ */
 
   .info{
       background: #2A2A2A;
