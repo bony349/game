@@ -15,11 +15,10 @@ router.get('/signin', (req, res, next) => {
 router.post('/signup', (req, res, next) => {
     var email = req.body.signupemail;
     var password = req.body.signuppassword;
-
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .catch(function(error) {
 
-            // Handle Errors here.
+
             var errorCode = error.code;
             var errorMessage = error.message;
             if (errorCode == 'auth/weak-password') {
@@ -40,32 +39,19 @@ router.post('/signup', (req, res, next) => {
 router.post('/signin', (req, res, next) => {
 
     var loginemail = req.body.loginemail;
+    var loginpassword = req.body.loginpassword;
+    const auth = firebase.auth();
+    const promise = auth.signInWithEmailAndPassword(loginemail, loginpassword)
 
-
-    var loginpassword = req.body.loginemail;
-
-
-
-    firebase.auth().signInWithEmailAndPassword(loginemail, loginpassword)
-        .catch(function(error) {
-            var errorCodes = error.code;
-            var errorMessage = error.message;
-            if (errorCodes === 'auth/wrong-password') {
-                founderror = true;
-                alert('Wrong password.');
-                founderror = true;
-            } else {
-                founderror = true;
-                alert(errorMessage);
-                founderror = true;
-            }
-
-            console.log(error);
-        });
-    if (founderror !== false) {
-        res.redirect('/signin');
-    } else {
-        res.redirect('/');
-    }
+    promise.catch(e => {
+        alert(e.message);
+        res.redirect('/signin')
+    })
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if (firebaseUser) {
+            res.redirect('/')
+        }
+    })
 });
+
 module.exports = router;
