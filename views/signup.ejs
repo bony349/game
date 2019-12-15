@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../assets/css/layoutStyle.css">
     <link rel="stylesheet" href="../assets/css/signupStyle.css">
     <style>
-        .dis {
+        .dis,#logdis,#loginPassDis {
             text-align: center;
         }
     </style>
@@ -27,7 +27,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-7 col-xs-12" id="con">
                     <div id="motion" class="right"></div>
-                    <form action="signin" id="loginForm" method="POST">
+                    <form action="signin" id="loginForm" onsubmit="event.preventDefault(); checkLogin()" method="POST">
                         <div><button id="toSignup" style="border-radius: 20px; padding-left: 6px ;" type="button" class="btn btn-outline-dark"><i class="fas fa-chevron-left"></i> Sign up</button></div>
                         <div class="follow_us" style="margin: 20px 0px 80px 0px ;">
                             <button type="button" class="btn btn-outline-dark">  <i class="fab fa-facebook"></i></button>
@@ -36,11 +36,14 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email" name="loginemail">
+                            <input type="email" class="form-control " id="email" name="loginemail">
+                            <div id="logdis"></div>
+                            
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" name="loginpassword">
+                            <input type="password" class="form-control " id="pwd" name="loginpassword">
+                            <div  id="loginPassDis"></div>
                         </div>
                         <div class="form-group form-check" id="cccc">
                             <label class="form-check-label">
@@ -52,7 +55,7 @@
 
                     </form>
 
-                    <form action="/signup" method="POST" id="signupForm" style="background: white;">
+                    <form action="/signup" method="POST" onsubmit="event.preventDefault(); isValid()" id="signupForm" style="background: white;">
                         <div style="text-align: right;"><button id="toLogin" style="border-radius: 20px; padding-right: 6px ;" type="button" class="btn btn-outline-dark"> Login <i class="fas fa-chevron-right"></i></button></div>
                         <div class="follow_us" style="margin-top: 20px ;">
                             <button type="button" class="btn btn-outline-dark">  <i class="fab fa-facebook"></i></button>

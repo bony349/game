@@ -6,6 +6,10 @@ button{
     
     
 }
+
+.dis{
+    transition: 0.8s;
+}
 .follow_us button{
     width: 40px;
     text-align: center;
