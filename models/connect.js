@@ -10,4 +10,27 @@ firebase.initializeApp({
     measurementId: "G-NPT2YHLYPH"
 
 })
+var admin = require("firebase-admin");
+
+var serviceAccount = require("./serviceAccountKey.json");
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://gamemaster-14998.firebaseio.com"
+});
+
+var database = admin.database();
+var ref = database.ref('product');
+var usersRef = ref.child("product");
+usersRef.set({
+    alanisawesome: {
+        name: "June 23, 1912",
+        price: 564
+    },
+    gracehop: {
+        name: "December 9, 1906",
+        price: 534
+    }
+});
+
 module.exports = firebase;

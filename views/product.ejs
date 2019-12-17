@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/1b6dbc5d1f.js"></script>
+    <script>
+                 
+            function show(elementID) {
+              
+              var ele = document.getElementById(elementID);
+              if (!ele) {
+                  alert("no such element");
+                  return;
+              }
+
+              
+              var pages = document.getElementsByClassName('page');
+              for(var i = 0; i < pages.length; i++) {
+                  pages[i].style.display = 'none';
+              }
+
+            
+              ele.style.display = 'block';
+          }
+            function onclickBTN(elementID){
+              var el = document.getElementById(elementID);
+              el.style.background="orange";
+              
+            }
+
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/layoutStyle.css">
+    <link rel="stylesheet" href="../assets/css/productstyle.css">
+    
+    <title> Games Store</title>
+
+</head>
+
+<body>
+ 
+  <%- include("parts/header")%>
+    
+<div class="card bg-dark text-white">
+  <img src="../assets/img/5fee8e4a9fea271529cfd8828dd990d5.gif" class="card-img" id="img_show" alt="GAME">
+  <div class="card-img-overlay">
+  
+  
+    <h1 class="card-title" id="title_page" >GAME STORE</h1>
+    <p class="card-text" id="p_page">Here will found all games </p>
+   
+  </div>
+</div>
+<br>
+<!--------------------------------------------------------------------------------------->
+<div class="container">
+  <div class="row justify-content-center">
+      <p>
+        
+        <span onclick="show('Page1'); onclickBTN('hold');"  style="border: 2px solid rgb(255, 255, 255);
+       border-spacing: 15px; " id="hold" >1</span>
+        <span onclick="show('Page2'); onclickBTN('hold2');" id="hold2" style=" border: 2px solid rgb(255, 255, 255);
+        ">2</span> 
+        <span onclick="show('Page3'); onclickBTN('hold3');" id="hold3" style=" border: 2px solid rgb(255, 255, 255);
+        ">3</span>
+        
+                              </p>
+
+  </div>
+</div>
+
+<!------------------------------------------------------------------------------------------>
+      
+      <br>
+      <!--****************************************GAME ENTITY*************************************-->
+       
+      <div id="Page1" class="page" style="">
+      
+        <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+          <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+          <div class="card-body row small3d" style="display: inline-block">
+          <h5 class="card-title small3dfortext">Game Name</h5>
+          <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+          <hr style="background: white; clear: both;width: 90%;">
+              <strong  class="small3dfortext">Price : $11.24</strong>
+          <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+          </div>
+          </div>
+
+          <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+            <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+            <div class="card-body row small3d" style="display: inline-block">
+            <h5 class="card-title small3dfortext">Game Name</h5>
+            <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+            <hr style="background: white; clear: both;width: 90%;">
+                <strong  class="small3dfortext">Price : $11.24</strong>
+            <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+            </div>
+            </div>
+
+            <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+              <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+              <div class="card-body row small3d" style="display: inline-block">
+              <h5 class="card-title small3dfortext">Game Name</h5>
+              <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+              <hr style="background: white; clear: both;width: 90%;">
+                  <strong  class="small3dfortext">Price : $11.24</strong>
+              <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+              </div>
+              </div>
+
+              <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+                <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+                <div class="card-body row small3d" style="display: inline-block">
+                <h5 class="card-title small3dfortext">Game Name</h5>
+                <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+                <hr style="background: white; clear: both;width: 90%;">
+                    <strong  class="small3dfortext">Price : $11.24</strong>
+                <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+                </div>
+                </div>
+
+                <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+                  <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+                  <div class="card-body row small3d" style="display: inline-block">
+                  <h5 class="card-title small3dfortext">Game Name</h5>
+                  <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+                  <hr style="background: white; clear: both;width: 90%;">
+                      <strong  class="small3dfortext">Price : $11.24</strong>
+                  <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+                  </div>
+                  </div>
+
+                  <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+                    <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+                    <div class="card-body row small3d" style="display: inline-block">
+                    <h5 class="card-title small3dfortext">Game Name</h5>
+                    <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+                    <hr style="background: white; clear: both;width: 90%;">
+                        <strong  class="small3dfortext">Price : $11.24</strong>
+                    <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+                    </div>
+                    </div>
+  
+    </div>
+    <div id="Page2" class="page" style="display:none">
+      
+      <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+        <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+        <div class="card-body row small3d" style="display: inline-block">
+        <h5 class="card-title small3dfortext">Game Name</h5>
+        <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+        <hr style="background: white; clear: both;width: 90%;">
+            <strong  class="small3dfortext">Price : $11.24</strong>
+        <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+        </div>
+        </div>
+
+        <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+          <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+          <div class="card-body row small3d" style="display: inline-block">
+          <h5 class="card-title small3dfortext">Game Name</h5>
+          <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+          <hr style="background: white; clear: both;width: 90%;">
+              <strong  class="small3dfortext">Price : $11.24</strong>
+          <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+          </div>
+          </div>
+
+          <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+            <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+            <div class="card-body row small3d" style="display: inline-block">
+            <h5 class="card-title small3dfortext">Game Name</h5>
+            <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+            <hr style="background: white; clear: both;width: 90%;">
+                <strong  class="small3dfortext">Price : $11.24</strong>
+            <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+            </div>
+            </div>
+
+    </div>
+    <div id="Page3" class="page" style="display:none">
+      <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+        <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+        <div class="card-body row small3d" style="display: inline-block">
+        <h5 class="card-title small3dfortext">Game Name</h5>
+        <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+        <hr style="background: white; clear: both;width: 90%;">
+            <strong  class="small3dfortext">Price : $11.24</strong>
+        <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+        </div>
+        </div>
+
+        <div class="card bigbox row text forbeing3d" style="max-width:20rem;">
+          <img class="card-img-top small3d" src="../assets/img/Call%20of%20duty.jpg" alt="Card image cap">
+          <div class="card-body row small3d" style="display: inline-block">
+          <h5 class="card-title small3dfortext">Game Name</h5>
+          <p class="card-text small3dfortext">Some Text About The Game In The Card.</p>
+          <hr style="background: white; clear: both;width: 90%;">
+              <strong  class="small3dfortext">Price : $11.24</strong>
+          <a href="#" class="btn btn-primary small3d" style="display: inline-block; float: right;">Go somewhere</a>
+          </div>
+          </div>
+
+    </div>
+            
+           
+      <!--****************************************************************************************-->
+      <br>
+      <div class="container">
+        <div class="row justify-content-center">
+            <p>
+              
+              <span onclick="show('Page1');"  style="    border: 2px solid rgb(255, 255, 255);
+             border-spacing: 15px; ">1</span>
+              <span onclick="show('Page2');" style=" border: 2px solid rgb(255, 255, 255);
+              ">2</span> 
+              <span onclick="show('Page3');" style=" border: 2px solid rgb(255, 255, 255);
+              ">3</span>
+              
+                                    </p>
+      
+        </div>
+      </div>
+ <%- include('parts/footer')%>
+  
+<%- include('parts/chat')%>
+
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+</body>
+
+</html>

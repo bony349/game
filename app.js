@@ -7,7 +7,7 @@ const about = require('./routes/about');
 const contactus = require('./routes/ContactUs');
 const Features = require('./routes/Features');
 const signup = require('./routes/signup');
-const products = require('./routes/products');
+const products = require('./routes/product');
 const error404 = require('./routes/404error');
 app.use(express.static(path.join(__dirname, 'assets')))
 app.use(express.static(path.join(__dirname)))
